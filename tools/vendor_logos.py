@@ -8,7 +8,7 @@ import base64
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-# (文件名（{theme} 会换成 dark / light，用来给深浅主题各放一个文件）, 鼠标悬停提示, 内边距: 越大 logo 越小; "full" = 铺满整块, 底色: None = 跟随深浅主题)
+# (文件名（{theme} 会换成 dark / light，用来给深浅主题各放一个文件）, 名称（只写进 SVG 内部的 title，GitHub 上不会显示成悬停提示）, 内边距: 越大 logo 越小; "full" = 铺满整块, 底色: None = 跟随深浅主题)
 LOGOS = [
     ("stmicroelectronics-blue-white.svg", "STMicroelectronics (STM32)", "full", None),
     ("texas-instruments-symbol-transparent.png", "Texas Instruments (MSPM0)", 46, None),
@@ -29,7 +29,10 @@ MIME = {".svg": "image/svg+xml", ".png": "image/png"}
 
 
 def data_uri(path):
-    return f"data:{MIME[path.suffix]};base64," + base64.b64encode(path.read_bytes()).decode()
+    data = path.read_bytes()
+    if path.suffix == ".svg":  # same bytes on every checkout, whatever git does to line endings
+        data = data.replace(b"\r\n", b"\n")
+    return f"data:{MIME[path.suffix]};base64," + base64.b64encode(data).decode()
 
 
 def build(theme):

@@ -1,0 +1,5 @@
+# Keep logo and generated SVG bytes identical on every checkout
+*.svg text eol=lf
+*.py text eol=lf
+*.png binary
+*.webp binary

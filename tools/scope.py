@@ -17,7 +17,7 @@ TEXT = {
     "status": ["RUN", "H  2023 → NOW", "Delay 0.00s"],  # 屏幕顶栏
     "status_right": "1 GSa/s  14 Mpts",                  # 屏幕顶栏右侧
     "title": "iRidium",                                  # 屏幕右栏大字
-    "title_sub": "66CCFF LABS",                          # 屏幕右栏第二行
+    "title_sub": "LAB",                                  # 屏幕右栏第二行（和大字合起来读作 iRidium Lab）
     "title_tag": "ROBOTICS × FULL-STACK",           # 屏幕右栏第三行
     "channels": ["HARDWARE", "FIRMWARE", "SOFTWARE"],    # CH1 / CH2 / CH3
     "trigger": "TRIG  CH1 ↑",                       # 屏幕右栏底部
@@ -302,6 +302,11 @@ def panel(c):
 
 
 def build(name, c):
+    # the SVG description follows TEXT, so it stays right when the labels change
+    global DESC
+    chans = ", ".join(f"CH{i + 1} {n}" for i, n in enumerate(TEXT["channels"]))
+    DESC = (f"A digital oscilloscope front panel. Three overlapping saddle-shaped traces on {chans}. "
+            f"{TEXT['title']} {TEXT['title_sub']}, {TEXT['title_tag']}.")
     style = f"""
     .cond{{font-family:{FONT_COND};font-stretch:condensed}}
     .sans{{font-family:{FONT_SANS}}}
@@ -339,7 +344,7 @@ def build(name, c):
     )
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {VW} {VH}" width="{VW}" height="{VH}" role="img" aria-labelledby="t d">
 <title id="t">iRidium oscilloscope</title>
-<desc id="d">A digital oscilloscope front panel. Three overlapping saddle-shaped traces on CH1 HARDWARE, CH2 FIRMWARE and CH3 SOFTWARE. iRidium, 66CCFF Labs, Robotics x Full-stack.</desc>
+<desc id="d">{esc(DESC)}</desc>
 <defs>
 <style>{style}</style>
 <clipPath id="scr"><rect x="{SX}" y="{SY}" width="{SW}" height="{SH}" rx="3"/></clipPath>

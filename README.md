@@ -7,9 +7,9 @@
 <!-- ✏️ 顶部横幅：text= 是大字，desc= 是小字。空格写 %20，× 写 %C3%97，· 写 %C2%B7，/ 写 %2F。深色、浅色、兜底三条要改成一样 -->
 <a href="https://www.66ccff-labs.com">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:080808%2C55:11110F%2C100:FF7400&height=220&section=header&text=Alvin%20Li&fontColor=FAFAFA&fontSize=64&fontAlignY=36&animation=fadeIn&desc=Robotics%20%C3%97%20Full-stack%20%C2%B7%20iRidium%20Labs&descAlignY=58&descSize=18">
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:FFFFFF%2C60:DBEAFE%2C100:2563EB&height=220&section=header&text=Alvin%20Li&fontColor=1E3A8A&fontSize=64&fontAlignY=36&animation=fadeIn&desc=Robotics%20%C3%97%20Full-stack%20%C2%B7%20iRidium%20Labs&descAlignY=58&descSize=18">
-    <img alt="Alvin Li · Robotics × Full-stack · iRidium Labs" src="https://capsule-render.vercel.app/api?type=waving&color=0:FFFFFF%2C60:DBEAFE%2C100:2563EB&height=220&section=header&text=Alvin%20Li&fontColor=1E3A8A&fontSize=64&fontAlignY=36&animation=fadeIn&desc=Robotics%20%C3%97%20Full-stack%20%C2%B7%20iRidium%20Labs&descAlignY=58&descSize=18" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:080808%2C55:11110F%2C100:FF7400&height=220&section=header&text=Alvin%20Li&fontColor=FAFAFA&fontSize=64&fontAlignY=36&animation=fadeIn&desc=Robotics%20%C3%97%20Full-stack%20%C2%B7%20iRidium%20Lab&descAlignY=58&descSize=18">
+    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:FFFFFF%2C60:DBEAFE%2C100:2563EB&height=220&section=header&text=Alvin%20Li&fontColor=1E3A8A&fontSize=64&fontAlignY=36&animation=fadeIn&desc=Robotics%20%C3%97%20Full-stack%20%C2%B7%20iRidium%20Lab&descAlignY=58&descSize=18">
+    <img alt="Alvin Li · Robotics × Full-stack · iRidium Lab" src="https://capsule-render.vercel.app/api?type=waving&color=0:FFFFFF%2C60:DBEAFE%2C100:2563EB&height=220&section=header&text=Alvin%20Li&fontColor=1E3A8A&fontSize=64&fontAlignY=36&animation=fadeIn&desc=Robotics%20%C3%97%20Full-stack%20%C2%B7%20iRidium%20Lab&descAlignY=58&descSize=18" width="100%">
   </picture>
 </a>
 
@@ -43,12 +43,13 @@
   <sub>机器人系统硬件 · 嵌入式 · 姿态控制 · 传感器融合 &nbsp;|&nbsp; 硬件为主，软件随行</sub>
 </p>
 
+<!-- ✏️ 两个徽章：badge/ 后面是「左边文字-右边文字-颜色」。文字里空格写 _，减号写 --，下划线写 __ -->
 <p align="center">
-  <a href="https://www.66ccff-labs.com"><img alt="66CCFF Labs my website" src="https://img.shields.io/badge/66CCFF--Labs-my_website-66CCFF?style=for-the-badge&labelColor=080808"></a>
+  <a href="https://www.66ccff-labs.com"><img alt="iRidium Lab website" src="https://img.shields.io/badge/iRidium_Lab-my_website-66CCFF?style=for-the-badge&labelColor=080808"></a>
   <a href="https://www.linkedin.com/in/zhiyi-li-3a0821429/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Alvin_Li-0A66C2?style=for-the-badge&labelColor=080808"></a>
 </p>
 
-<!-- 示波器：图上文字改 tools/scope.py -->
+<!-- 示波器：图上文字改 tools/scope.py。改了通道名的话，下面 <img alt=…> 里的通道名也要手动改 -->
 
 <p align="center">
   <picture>
@@ -97,7 +98,8 @@ Robotic-systems hardware and embedded engineer. I work from schematic and PCB la
       <br><sub>Buck, USB PD multi-rail, charge-and-boost</sub>
     </td>
     <td align="center" width="33%" valign="top">
-      <a href="https://www.66ccff-labs.com/work/course-tool-boards"><img alt="ASRPRO voice module and OLED controller board" src="assets/boards/voice-light.webp" width="240"></a>
+      <!-- 这张还没有作品集页面，先不加链接；套在 picture 里是为了让 GitHub 不把图片变成可点开的大图 -->
+      <picture><img alt="ASRPRO voice module and OLED controller board" src="assets/boards/voice-light.webp" width="240"></picture>
       <br><b>Wireless Voice-Controlled Light</b>
       <br><sub>ASRPRO voice recognition + OLED controller</sub>
     </td>
@@ -109,8 +111,9 @@ Robotic-systems hardware and embedded engineer. I work from schematic and PCB la
 ## Tech stack
 
 <!-- ✏️ 三行技术栈：第一行语言，第二行嵌入式与硬件，第三行软件与工具 -->
-<!-- 第一、三行：i= 后面是图标名，用 %2C 隔开（深色、浅色两条一起改；兜底那条用普通逗号）。可用的名字见 https://skillicons.dev -->
-<!-- 第二行（ST、TI、亚德诺、乐鑫、雅特力、Arduino、Keil、LVGL、Altium、Cadence、KiCad、EasyEDA、SolidWorks）是 assets/svg/vendor-*.svg，增删改 tools/vendor_logos.py -->
+<!-- 第一、三行：i= 后面是图标名，用 %2C 隔开（深色、浅色两条一起改；兜底那条用普通逗号）。可用的名字见 https://skillicons.dev
+     增删图标后，三条里的 perline= 都要改成这一行的图标个数，不然这一行会折成两行；alt= 里的名单也一起改 -->
+<!-- 第二行（ST、TI、亚德诺、乐鑫、雅特力、Arduino、Keil、LVGL、Altium、Cadence、KiCad、EasyEDA、SolidWorks）是 assets/svg/vendor-*.svg，增删改 tools/vendor_logos.py，改完把下面 <img alt=…> 里的名单也改一下 -->
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=c%2Ccpp%2Cpython%2Crust%2Cverilog%2Cmatlab%2Ccmake%2Cbash%2Cpowershell%2Clatex%2Cmd&theme=dark&perline=11">
@@ -146,7 +149,7 @@ Robotic-systems hardware and embedded engineer. I work from schematic and PCB la
   </picture>
 </p>
 
-<!-- 贪吃蛇：由 .github/workflows/snake.yml 每天生成到 output 分支。仓库建好后要在 Actions 里手动运行一次才会出现 -->
+<!-- 贪吃蛇：.github/workflows/snake.yml 每天和每次推送到 main 时重新生成到 output 分支。仓库 60 天没有动静时 GitHub 会暂停定时任务，到 Actions 页面重新启用即可 -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Awes0meE/Awes0meE/output/github-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Awes0meE/Awes0meE/output/github-snake.svg">
