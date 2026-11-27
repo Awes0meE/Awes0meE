@@ -8,15 +8,16 @@ import base64
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-# (文件名, 鼠标悬停提示, 内边距: 越大 logo 越小; "full" = 铺满整块, 底色: None = 跟随深浅主题)
+# (文件名（{theme} 会换成 dark / light，用来给深浅主题各放一个文件）, 鼠标悬停提示, 内边距: 越大 logo 越小; "full" = 铺满整块, 底色: None = 跟随深浅主题)
 LOGOS = [
     ("stmicroelectronics-blue-white.svg", "STMicroelectronics (STM32)", "full", None),
     ("texas-instruments-symbol-transparent.png", "Texas Instruments (MSPM0)", 46, None),
+    ("adi.svg", "Analog Devices", 56, None),
     ("espressif-symbol.png", "Espressif (ESP32)", 52, None),
     ("artery-wordmark.png", "Artery (AT32)", 12, "#1B2232"),
     ("arduino.png", "Arduino", 34, None),
-    ("keil-studio.png", "Arm Keil MDK", 30, None),
-    ("lvgl-white.svg", "LVGL", 58, "#343839"),
+    ("keil-uvision.png", "Keil µVision", "full", None),
+    ("lvgl-{theme}.svg", "LVGL", 52, None),
     ("altium-designer.svg", "Altium Designer", 40, None),
     ("cadence-pcb-editor-clean.png", "Cadence Allegro", "full", None),
     ("kicad-logo.png", "KiCad", 26, "#F4F6FB"),
@@ -37,7 +38,7 @@ def build(theme):
     tiles = []
     for i, (fn, title, pad, bg) in enumerate(LOGOS):
         x = i * 300
-        uri = data_uri(ROOT / "assets" / "logos" / fn)
+        uri = data_uri(ROOT / "assets" / "logos" / fn.format(theme=theme))
         if pad == "full":
             img = (f'<image href="{uri}" x="0" y="0" width="256" height="256" preserveAspectRatio="xMidYMid slice" '
                    f'clip-path="url(#tile)"/>')
