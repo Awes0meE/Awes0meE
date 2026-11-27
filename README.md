@@ -48,19 +48,14 @@
   <a href="https://www.linkedin.com/in/zhiyi-li-3a0821429/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Alvin_Li-0A66C2?style=for-the-badge&labelColor=080808"></a>
 </p>
 
-<!-- 示波器：屏幕上是 FOC 驱动的三相 SVPWM 马鞍波，点击进入 FOC 项目页。图上文字改 tools/scope.py -->
+<!-- 示波器：图上文字改 tools/scope.py -->
 
 <p align="center">
-  <a href="https://www.66ccff-labs.com/work/sensorless-foc-learning-route">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="assets/svg/scope-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="assets/svg/scope-light.svg">
-      <img alt="Oscilloscope with three overlapping SVPWM saddle waves on CH1 Hardware, CH2 Firmware and CH3 Software" src="assets/svg/scope-light.svg" width="100%">
-    </picture>
-  </a>
-  <br>
-  <!-- ✏️ 示波器下面那行说明 -->
-  <sub>On screen: three-phase SVPWM saddle waves from my STM32F446 / DRV8301 FOC driver. <a href="https://www.66ccff-labs.com/work/sensorless-foc-learning-route">Read the write-up →</a></sub>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/svg/scope-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/svg/scope-light.svg">
+    <img alt="Oscilloscope with three overlapping saddle waves on CH1 Hardware, CH2 Firmware and CH3 Software" src="assets/svg/scope-light.svg" width="100%">
+  </picture>
 </p>
 
 ## About

@@ -24,7 +24,6 @@
 | 示波器三个通道 | CH1 HARDWARE / CH2 FIRMWARE / CH3 SOFTWARE | `TEXT["channels"]` |
 | 示波器触发 | TRIG CH1 ↑ | `TEXT["trigger"]` |
 | 示波器屏幕底部菜单 | MCU / PCB / CONTROL / SENSOR FUSION / WEB & AI / 1/2 ▸ | `TEXT["menu"]` |
-| 示波器下的说明 | On screen: three-phase SVPWM saddle waves from my STM32F446 / DRV8301 FOC driver. Read the write-up → | `README.md`「示波器下面那行说明」注释下面 |
 | About | Robotic-systems hardware and embedded engineer. … | `README.md`「About」一节 |
 | CH1 Hardware 卡片 | GaN Quadrotor ESC、AD831 Active Mixer、Claude Chime Power Board、Cirro Cooling Controllers、Course Project Tool Boards、Wireless Voice-Controlled Light | `README.md`「CH1 Hardware」一节，`<b>` 是标题，`<sub>` 是说明 |
 | CH2 Firmware / CH3 Software 仓库卡片 | 标题和描述由 GitHub 自动读取 | 去对应仓库首页右侧的 About 改描述；增删卡片在「CH2 Firmware」「CH3 Software」两节 |
