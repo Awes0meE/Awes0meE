@@ -4,7 +4,7 @@
 
 - `README.md`：除示波器和厂商 logo 以外的所有文字。文件里带 ✏️ 的注释标出了每一处可以改的地方。
 - `tools/scope.py`：示波器图上的文字，都在文件顶部的 `TEXT` 里。改完在仓库根目录运行 `python tools/scope.py`，深色和浅色两张图会一起重新生成。
-- `tools/vendor_logos.py`：技术栈第二行的厂商 logo（Altium、Cadence、EasyEDA、Keil、ST、TI、乐鑫、SolidWorks）。logo 文件放在 `assets/logos/`，改完运行 `python tools/vendor_logos.py`。
+- `tools/vendor_logos.py`：技术栈第二行「嵌入式与硬件」的 logo（ST、TI、乐鑫、雅特力、Arduino、Keil、LVGL、Altium、Cadence、EasyEDA、SolidWorks）。logo 文件放在 `assets/logos/`，改完运行 `python tools/vendor_logos.py`。
 - `assets/boards/`：硬件区的 6 张实拍抠图，600 × 440 透明底。换图时保持同样尺寸，板子大小看起来才一致。
 
 改完以后，在 GitHub 网页上打开 `README.md`，点铅笔进入编辑，再切到 Preview 标签就能先看效果。
@@ -23,11 +23,13 @@
 | 示波器屏幕右栏 | iRidium / 66CCFF LABS / ROBOTICS × FULL-STACK | `TEXT["title"]`、`TEXT["title_sub"]`、`TEXT["title_tag"]` |
 | 示波器三个通道 | CH1 HARDWARE / CH2 FIRMWARE / CH3 SOFTWARE | `TEXT["channels"]` |
 | 示波器触发 | TRIG CH1 ↑ | `TEXT["trigger"]` |
-| 示波器屏幕底部菜单 | MCU / PCB / CONTROL / SENSOR FUSION / WEB & AI / 1/2 ▸ | `TEXT["menu"]` |
+| 示波器屏幕底部菜单（第 1 页） | MCU / PCB / CONTROL / SENSOR FUSION / WEB & AI / 1/2 ▸ | `TEXT["menu"]` |
+| 示波器屏幕底部菜单（第 2 页，每 5 秒和第 1 页轮换） | DECODE / UART·RS232 / I2C·SPI / CAN·Modbus / DShot·1-Wire / 2/2 ◂ | `TEXT["decode"]`，一格里用 `
+` 分上下两行 |
 | About | Robotic-systems hardware and embedded engineer. … | `README.md`「About」一节 |
 | CH1 Hardware 卡片 | GaN Quadrotor ESC、AD831 Active Mixer、Claude Chime Power Board、Cirro Cooling Controllers、Course Project Tool Boards、Wireless Voice-Controlled Light | `README.md`「CH1 Hardware」一节，`<b>` 是标题，`<sub>` 是说明 |
-| 技术栈图标（第一、三行） | C、C++、Arduino… / TS、JS、React… | `README.md`「Tech stack」一节注释下面的 `i=` |
-| 厂商 logo（第二行） | Altium、Cadence、EasyEDA、Keil、ST、TI、乐鑫、SolidWorks | `tools/vendor_logos.py` 的 `LOGOS` |
+| 技术栈第一行（语言）和第三行（软件与工具） | C、C++、Python、Rust、Verilog、MATLAB、Bash、LaTeX、Markdown / TS、JS、React、Tauri、Node.js、Vite、SQLite、Qt、CMake、Linux、Git、GitHub Actions | `README.md`「Tech stack」一节注释下面的 `i=` |
+| 技术栈第二行（嵌入式与硬件） | ST、TI、乐鑫、雅特力、Arduino、Keil、LVGL、Altium、Cadence、EasyEDA、SolidWorks | `tools/vendor_logos.py` 的 `LOGOS` |
 | 统计卡片标题 | Alvin Li's GitHub Stats | 自动读取你 GitHub 资料里的名字 |
 
 在 `README.md` 里搜 ✏️ 就能找到每一处可以改的地方。

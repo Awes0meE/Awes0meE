@@ -21,7 +21,9 @@ TEXT = {
     "title_tag": "ROBOTICS × FULL-STACK",           # 屏幕右栏第三行
     "channels": ["HARDWARE", "FIRMWARE", "SOFTWARE"],    # CH1 / CH2 / CH3
     "trigger": "TRIG  CH1 ↑",                       # 屏幕右栏底部
-    "menu": ["MCU", "PCB", "CONTROL", "SENSOR FUSION", "WEB & AI", "1/2 ▸"],  # 屏幕底部菜单（对应下面一排软键）
+    "menu": ["MCU", "PCB", "CONTROL", "SENSOR FUSION", "WEB & AI", "1/2 ▸"],  # 屏幕底部菜单第 1 页（对应下面一排软键）
+    # 屏幕底部菜单第 2 页：协议解码。和第 1 页每 5 秒轮换一次；一格里用 \n 分成上下两行
+    "decode": ["DECODE", "UART\nRS232", "I2C\nSPI", "CAN\nModbus", "DShot\n1-Wire", "2/2 ◂"],
 }
 
 OUT = Path(__file__).resolve().parent.parent / "assets" / "svg"
@@ -205,11 +207,25 @@ def screen_layer():
                  f'<line x1="{SX}" y1="{MY}" x2="{SX + SW}" y2="{MY}" stroke="{s["bar_edge"]}"/>')
     n = len(TEXT["menu"])
     cw = SW / n
+    for i in range(1, n):
+        x0 = SX + i * cw
+        parts.append(f'<line x1="{f(x0)}" y1="{MY + 6}" x2="{f(x0)}" y2="{MY + 34}" stroke="{s["bar_edge"]}"/>')
+    # page 1: the normal menu; page 2: protocol decode. The two pages cross-fade in turn.
+    pg1, pg2 = [], []
     for i, m in enumerate(TEXT["menu"]):
         x0 = SX + i * cw
-        if i:
-            parts.append(f'<line x1="{f(x0)}" y1="{MY + 6}" x2="{f(x0)}" y2="{MY + 34}" stroke="{s["bar_edge"]}"/>')
-        parts.append(f'<text x="{f(x0 + cw / 2)}" y="{MY + 24.5}" class="sans" font-size="10" font-weight="600" fill="{s["text"]}" text-anchor="middle">{esc(m)}</text>')
+        pg1.append(f'<text x="{f(x0 + cw / 2)}" y="{MY + 24.5}" class="sans" font-size="10" font-weight="600" fill="{s["text"]}" text-anchor="middle">{esc(m)}</text>')
+    for i, cell in enumerate(TEXT["decode"][:n]):
+        cx = f(SX + i * cw + cw / 2)
+        lines = cell.split("\n")
+        if i == 0:
+            pg2.append(f'<text x="{cx}" y="{MY + 24.5}" class="sans" font-size="10" font-weight="700" fill="{s["tag"]}" text-anchor="middle">{esc(cell)}</text>')
+        elif len(lines) == 1:
+            pg2.append(f'<text x="{cx}" y="{MY + 24.5}" class="sans" font-size="10" font-weight="600" fill="{s["text"]}" text-anchor="middle">{esc(cell)}</text>')
+        else:
+            pg2.append(f'<text x="{cx}" y="{MY + 17.5}" class="sans" font-size="9" font-weight="600" fill="{s["text"]}" text-anchor="middle">{esc(lines[0])}</text>'
+                       f'<text x="{cx}" y="{MY + 30}" class="sans" font-size="9" font-weight="600" fill="{s["muted"]}" text-anchor="middle">{esc(lines[1])}</text>')
+    parts.append('<g class="pg1">' + "".join(pg1) + '</g><g class="pg2">' + "".join(pg2) + "</g>")
     # beam
     parts.append(f'<g class="beam"><line x1="{GX}" y1="{GY}" x2="{GX}" y2="{GY + GH}" stroke="{s["tag"]}" stroke-width="1" stroke-dasharray="3 3" opacity="0.8"/></g>')
     return (f'<g clip-path="url(#scr)">' + "".join(parts) + "</g>"
@@ -294,7 +310,12 @@ def build(name, c):
       .sweep{{stroke-dasharray:1000;stroke-dashoffset:1000;animation:sweep 5s cubic-bezier(.4,0,.2,1) -3.3s infinite}}
       .beam{{animation:beam 5s cubic-bezier(.4,0,.2,1) -3.3s infinite}}
       .run{{animation:blink 1.4s steps(2,start) infinite}}
+      .pg1{{animation:pg1 10s infinite}}
+      .pg2{{animation:pg2 10s infinite}}
     }}
+    .pg2{{opacity:0}}
+    @keyframes pg1{{0%,44%{{opacity:1}}50%,94%{{opacity:0}}100%{{opacity:1}}}}
+    @keyframes pg2{{0%,44%{{opacity:0}}50%,94%{{opacity:1}}100%{{opacity:0}}}}
     @keyframes sweep{{0%{{stroke-dashoffset:1000}}70%{{stroke-dashoffset:0}}92%{{stroke-dashoffset:0;opacity:1}}100%{{stroke-dashoffset:0;opacity:0}}}}
     @keyframes beam{{0%{{transform:translateX(0)}}70%{{transform:translateX({GW}px)}}100%{{transform:translateX({GW}px)}}}}
     @keyframes blink{{to{{opacity:.35}}}}
