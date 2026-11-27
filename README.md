@@ -110,24 +110,24 @@ Robotic-systems hardware and embedded engineer. I work from schematic and PCB la
 
 <!-- ✏️ 三行技术栈：第一行语言，第二行嵌入式与硬件，第三行软件与工具 -->
 <!-- 第一、三行：i= 后面是图标名，用 %2C 隔开（深色、浅色两条一起改；兜底那条用普通逗号）。可用的名字见 https://skillicons.dev -->
-<!-- 第二行（ST、TI、乐鑫、雅特力、Arduino、Keil、LVGL、Altium、Cadence、EasyEDA、SolidWorks）是 assets/svg/vendor-*.svg，增删改 tools/vendor_logos.py -->
+<!-- 第二行（ST、TI、乐鑫、雅特力、Arduino、Keil、LVGL、Altium、Cadence、KiCad、EasyEDA、SolidWorks）是 assets/svg/vendor-*.svg，增删改 tools/vendor_logos.py -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=c%2Ccpp%2Cpython%2Crust%2Cverilog%2Cmatlab%2Cbash%2Clatex%2Cmd&theme=dark&perline=9">
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=c%2Ccpp%2Cpython%2Crust%2Cverilog%2Cmatlab%2Cbash%2Clatex%2Cmd&theme=light&perline=9">
-    <img alt="Languages: C, C++, Python, Rust, Verilog, MATLAB, Bash, LaTeX, Markdown" src="https://skillicons.dev/icons?i=c,cpp,python,rust,verilog,matlab,bash,latex,md&theme=light&perline=9">
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=c%2Ccpp%2Cpython%2Crust%2Cverilog%2Cmatlab%2Ccmake%2Cbash%2Clatex%2Cmd&theme=dark&perline=10">
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=c%2Ccpp%2Cpython%2Crust%2Cverilog%2Cmatlab%2Ccmake%2Cbash%2Clatex%2Cmd&theme=light&perline=10">
+    <img alt="Languages: C, C++, Python, Rust, Verilog, MATLAB, CMake, Bash, LaTeX, Markdown" src="https://skillicons.dev/icons?i=c,cpp,python,rust,verilog,matlab,cmake,bash,latex,md&theme=light&perline=10">
   </picture>
   <br>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/svg/vendor-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/svg/vendor-light.svg">
-    <img alt="Embedded and hardware: STMicroelectronics, Texas Instruments, Espressif, Artery, Arduino, Arm Keil MDK, LVGL, Altium Designer, Cadence Allegro, EasyEDA, SOLIDWORKS" src="assets/svg/vendor-light.svg">
+    <img alt="Embedded and hardware: STMicroelectronics, Texas Instruments, Espressif, Artery, Arduino, Arm Keil MDK, LVGL, Altium Designer, Cadence Allegro, KiCad, EasyEDA, SOLIDWORKS" src="assets/svg/vendor-light.svg">
   </picture>
   <br>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts%2Cjs%2Creact%2Ctauri%2Cnodejs%2Cvite%2Csqlite%2Cqt%2Ccmake%2Clinux%2Cgit%2Cgithubactions&theme=dark&perline=12">
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=ts%2Cjs%2Creact%2Ctauri%2Cnodejs%2Cvite%2Csqlite%2Cqt%2Ccmake%2Clinux%2Cgit%2Cgithubactions&theme=light&perline=12">
-    <img alt="Software and tools: TypeScript, JavaScript, React, Tauri, Node.js, Vite, SQLite, Qt, CMake, Linux, Git, GitHub Actions" src="https://skillicons.dev/icons?i=ts,js,react,tauri,nodejs,vite,sqlite,qt,cmake,linux,git,githubactions&theme=light&perline=12">
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts%2Cjs%2Creact%2Ctauri%2Cnodejs%2Cvite%2Csqlite%2Cqt%2Clinux%2Cgit&theme=dark&perline=10">
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=ts%2Cjs%2Creact%2Ctauri%2Cnodejs%2Cvite%2Csqlite%2Cqt%2Clinux%2Cgit&theme=light&perline=10">
+    <img alt="Software and tools: TypeScript, JavaScript, React, Tauri, Node.js, Vite, SQLite, Qt, Linux, Git" src="https://skillicons.dev/icons?i=ts,js,react,tauri,nodejs,vite,sqlite,qt,linux,git&theme=light&perline=10">
   </picture>
 </p>
 

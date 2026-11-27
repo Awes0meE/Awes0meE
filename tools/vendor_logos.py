@@ -19,6 +19,7 @@ LOGOS = [
     ("lvgl-white.svg", "LVGL", 58, "#343839"),
     ("altium-designer.svg", "Altium Designer", 40, None),
     ("cadence-pcb-editor-clean.png", "Cadence Allegro", "full", None),
+    ("kicad-logo.png", "KiCad", 26, "#F4F6FB"),
     ("easyeda.svg", "EasyEDA", 44, None),
     ("solidworks-user-drawn-transparent.png", "SOLIDWORKS", 36, None),
 ]
