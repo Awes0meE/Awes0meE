@@ -125,9 +125,9 @@ Robotic-systems hardware and embedded engineer. I work from schematic and PCB la
   </picture>
   <br>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts%2Cjs%2Creact%2Ctauri%2Cnodejs%2Cvite%2Csqlite%2Cqt%2Clinux%2Cgit&theme=dark&perline=10">
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=ts%2Cjs%2Creact%2Ctauri%2Cnodejs%2Cvite%2Csqlite%2Cqt%2Clinux%2Cgit&theme=light&perline=10">
-    <img alt="Software and tools: TypeScript, JavaScript, React, Tauri, Node.js, Vite, SQLite, Qt, Linux, Git" src="https://skillicons.dev/icons?i=ts,js,react,tauri,nodejs,vite,sqlite,qt,linux,git&theme=light&perline=10">
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts%2Cjs%2Chtml%2Ccss%2Creact%2Ctauri%2Cnodejs%2Cvite%2Csqlite%2Cqt%2Clinux%2Cgit&theme=dark&perline=12">
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=ts%2Cjs%2Chtml%2Ccss%2Creact%2Ctauri%2Cnodejs%2Cvite%2Csqlite%2Cqt%2Clinux%2Cgit&theme=light&perline=12">
+    <img alt="Software and tools: TypeScript, JavaScript, HTML, CSS, React, Tauri, Node.js, Vite, SQLite, Qt, Linux, Git" src="https://skillicons.dev/icons?i=ts,js,html,css,react,tauri,nodejs,vite,sqlite,qt,linux,git&theme=light&perline=12">
   </picture>
 </p>
 
