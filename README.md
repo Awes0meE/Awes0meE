@@ -106,63 +106,10 @@ Robotic-systems hardware and embedded engineer. I work from schematic and PCB la
 
 <p align="right"><a href="https://www.66ccff-labs.com/work">→ all projects on 66ccff-labs.com/work</a></p>
 
-## <kbd>CH2</kbd> Firmware
-
-<!-- 仓库卡片的标题和描述是 GitHub 自动读取的，要改就去改对应仓库的 About 描述 -->
-<p align="center">
-  <a href="https://github.com/Awes0meE/STM32_Sensorless_FOC">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=Awes0meE&repo=STM32_Sensorless_FOC&hide_border=true&bg_color=11110F&title_color=66CCFF&icon_color=FF7400&text_color=FAFAFA&description_lines_count=2">
-      <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=Awes0meE&repo=STM32_Sensorless_FOC&bg_color=FFFFFF&title_color=2563EB&icon_color=38BDF8&text_color=1E3A8A&border_color=E5E7EB&description_lines_count=2">
-      <img alt="STM32_Sensorless_FOC" src="https://github-stats-extended.vercel.app/api/pin/?username=Awes0meE&repo=STM32_Sensorless_FOC&bg_color=FFFFFF&title_color=2563EB&icon_color=38BDF8&text_color=1E3A8A&border_color=E5E7EB&description_lines_count=2" width="49%">
-    </picture>
-  </a>
-  <a href="https://github.com/Awes0meE/STM32-BLDC-ESC-Experiments">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=Awes0meE&repo=STM32-BLDC-ESC-Experiments&hide_border=true&bg_color=11110F&title_color=66CCFF&icon_color=FF7400&text_color=FAFAFA&description_lines_count=2">
-      <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=Awes0meE&repo=STM32-BLDC-ESC-Experiments&bg_color=FFFFFF&title_color=2563EB&icon_color=38BDF8&text_color=1E3A8A&border_color=E5E7EB&description_lines_count=2">
-      <img alt="STM32-BLDC-ESC-Experiments" src="https://github-stats-extended.vercel.app/api/pin/?username=Awes0meE&repo=STM32-BLDC-ESC-Experiments&bg_color=FFFFFF&title_color=2563EB&icon_color=38BDF8&text_color=1E3A8A&border_color=E5E7EB&description_lines_count=2" width="49%">
-    </picture>
-  </a>
-  <a href="https://github.com/Awes0meE/coolix-ir-controller">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=Awes0meE&repo=coolix-ir-controller&hide_border=true&bg_color=11110F&title_color=66CCFF&icon_color=FF7400&text_color=FAFAFA&description_lines_count=2">
-      <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=Awes0meE&repo=coolix-ir-controller&bg_color=FFFFFF&title_color=2563EB&icon_color=38BDF8&text_color=1E3A8A&border_color=E5E7EB&description_lines_count=2">
-      <img alt="coolix-ir-controller" src="https://github-stats-extended.vercel.app/api/pin/?username=Awes0meE&repo=coolix-ir-controller&bg_color=FFFFFF&title_color=2563EB&icon_color=38BDF8&text_color=1E3A8A&border_color=E5E7EB&description_lines_count=2" width="49%">
-    </picture>
-  </a>
-  <a href="https://github.com/Awes0meE/Arduino-Nano-Minimized-System">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=Awes0meE&repo=Arduino-Nano-Minimized-System&hide_border=true&bg_color=11110F&title_color=66CCFF&icon_color=FF7400&text_color=FAFAFA&description_lines_count=2">
-      <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=Awes0meE&repo=Arduino-Nano-Minimized-System&bg_color=FFFFFF&title_color=2563EB&icon_color=38BDF8&text_color=1E3A8A&border_color=E5E7EB&description_lines_count=2">
-      <img alt="Arduino-Nano-Minimized-System" src="https://github-stats-extended.vercel.app/api/pin/?username=Awes0meE&repo=Arduino-Nano-Minimized-System&bg_color=FFFFFF&title_color=2563EB&icon_color=38BDF8&text_color=1E3A8A&border_color=E5E7EB&description_lines_count=2" width="49%">
-    </picture>
-  </a>
-</p>
-
-## <kbd>CH3</kbd> Software
-
-<p align="center">
-  <a href="https://github.com/Awes0meE/Global-Software-Timer">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=Awes0meE&repo=Global-Software-Timer&hide_border=true&bg_color=11110F&title_color=66CCFF&icon_color=FF7400&text_color=FAFAFA&description_lines_count=2">
-      <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=Awes0meE&repo=Global-Software-Timer&bg_color=FFFFFF&title_color=2563EB&icon_color=38BDF8&text_color=1E3A8A&border_color=E5E7EB&description_lines_count=2">
-      <img alt="Global-Software-Timer" src="https://github-stats-extended.vercel.app/api/pin/?username=Awes0meE&repo=Global-Software-Timer&bg_color=FFFFFF&title_color=2563EB&icon_color=38BDF8&text_color=1E3A8A&border_color=E5E7EB&description_lines_count=2" width="49%">
-    </picture>
-  </a>
-  <a href="https://github.com/Awes0meE/WeChat-Clawbot-Ledger">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=Awes0meE&repo=WeChat-Clawbot-Ledger&hide_border=true&bg_color=11110F&title_color=66CCFF&icon_color=FF7400&text_color=FAFAFA&description_lines_count=2">
-      <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=Awes0meE&repo=WeChat-Clawbot-Ledger&bg_color=FFFFFF&title_color=2563EB&icon_color=38BDF8&text_color=1E3A8A&border_color=E5E7EB&description_lines_count=2">
-      <img alt="WeChat-Clawbot-Ledger" src="https://github-stats-extended.vercel.app/api/pin/?username=Awes0meE&repo=WeChat-Clawbot-Ledger&bg_color=FFFFFF&title_color=2563EB&icon_color=38BDF8&text_color=1E3A8A&border_color=E5E7EB&description_lines_count=2" width="49%">
-    </picture>
-  </a>
-</p>
-
 ## Tech stack
 
-<!-- ✏️ 前两行技术栈图标：i= 后面是图标名，用 %2C 隔开（深色、浅色两条一起改；兜底那条用普通逗号）。可用的名字见 https://skillicons.dev -->
-<!-- 第三行厂商 logo（Altium、Cadence、EasyEDA、Keil、ST、TI、乐鑫、SolidWorks）是 assets/svg/vendor-*.svg，增删改 tools/vendor_logos.py -->
+<!-- ✏️ 第一、三行技术栈图标：i= 后面是图标名，用 %2C 隔开（深色、浅色两条一起改；兜底那条用普通逗号）。可用的名字见 https://skillicons.dev -->
+<!-- 第二行厂商 logo（Altium、Cadence、EasyEDA、Keil、ST、TI、乐鑫、SolidWorks）是 assets/svg/vendor-*.svg，增删改 tools/vendor_logos.py -->
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=c%2Ccpp%2Carduino%2Craspberrypi%2Cmatlab%2Clinux%2Ccmake%2Cqt&theme=dark&perline=8">
@@ -204,16 +151,6 @@ Robotic-systems hardware and embedded engineer. I work from schematic and PCB la
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Awes0meE/Awes0meE/output/github-snake.svg">
   <img alt="contribution snake" src="https://raw.githubusercontent.com/Awes0meE/Awes0meE/output/github-snake.svg" width="100%">
 </picture>
-
-<!-- ✏️ 页尾链接 -->
-<p align="center">
-  <sub>
-    <a href="https://www.66ccff-labs.com">website</a> &nbsp;·&nbsp;
-    <a href="https://www.66ccff-labs.com/work">projects</a> &nbsp;·&nbsp;
-    <a href="https://www.66ccff-labs.com/notes">notes</a> &nbsp;·&nbsp;
-    <a href="https://www.linkedin.com/in/zhiyi-li-3a0821429/">linkedin</a>
-  </sub>
-</p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:080808%2C55:11110F%2C100:FF7400&height=120&section=footer">

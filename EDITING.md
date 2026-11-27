@@ -26,11 +26,9 @@
 | 示波器屏幕底部菜单 | MCU / PCB / CONTROL / SENSOR FUSION / WEB & AI / 1/2 ▸ | `TEXT["menu"]` |
 | About | Robotic-systems hardware and embedded engineer. … | `README.md`「About」一节 |
 | CH1 Hardware 卡片 | GaN Quadrotor ESC、AD831 Active Mixer、Claude Chime Power Board、Cirro Cooling Controllers、Course Project Tool Boards、Wireless Voice-Controlled Light | `README.md`「CH1 Hardware」一节，`<b>` 是标题，`<sub>` 是说明 |
-| CH2 Firmware / CH3 Software 仓库卡片 | 标题和描述由 GitHub 自动读取 | 去对应仓库首页右侧的 About 改描述；增删卡片在「CH2 Firmware」「CH3 Software」两节 |
 | 技术栈图标（第一、三行） | C、C++、Arduino… / TS、JS、React… | `README.md`「Tech stack」一节注释下面的 `i=` |
 | 厂商 logo（第二行） | Altium、Cadence、EasyEDA、Keil、ST、TI、乐鑫、SolidWorks | `tools/vendor_logos.py` 的 `LOGOS` |
 | 统计卡片标题 | Alvin Li's GitHub Stats | 自动读取你 GitHub 资料里的名字 |
-| 页尾链接 | website · projects · notes · linkedin | `README.md` 结尾「页尾链接」注释下面 |
 
 在 `README.md` 里搜 ✏️ 就能找到每一处可以改的地方。
 
