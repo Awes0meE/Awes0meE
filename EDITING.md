@@ -28,7 +28,7 @@
 ` 分上下两行 |
 | About | Robotic-systems hardware and embedded engineer. … | `README.md`「About」一节 |
 | CH1 Hardware 卡片 | GaN Quadrotor ESC、AD831 Active Mixer、Claude Chime Power Board、Cirro Cooling Controllers、Course Project Tool Boards、Wireless Voice-Controlled Light | `README.md`「CH1 Hardware」一节，`<b>` 是标题，`<sub>` 是说明 |
-| 技术栈第一行（语言）和第三行（软件与工具） | C、C++、Python、Rust、Verilog、MATLAB、CMake、Bash、LaTeX、Markdown / TS、JS、HTML、CSS、React、Tauri、Node.js、Vite、SQLite、Qt、Linux、Git | `README.md`「Tech stack」一节注释下面的 `i=` |
+| 技术栈第一行（语言）和第三行（软件与工具） | C、C++、Python、Rust、Verilog、MATLAB、CMake、Bash、PowerShell、LaTeX、Markdown / TS、JS、HTML、CSS、React、Tauri、Node.js、Vite、SQLite、Qt、Linux、Git | `README.md`「Tech stack」一节注释下面的 `i=` |
 | 技术栈第二行（嵌入式与硬件） | ST、TI、亚德诺、乐鑫、雅特力、Arduino、Keil、LVGL、Altium、Cadence、KiCad、EasyEDA、SolidWorks | `tools/vendor_logos.py` 的 `LOGOS` |
 | 统计卡片标题 | Alvin Li's GitHub Stats | 自动读取你 GitHub 资料里的名字 |
 

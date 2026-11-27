@@ -113,9 +113,9 @@ Robotic-systems hardware and embedded engineer. I work from schematic and PCB la
 <!-- 第二行（ST、TI、亚德诺、乐鑫、雅特力、Arduino、Keil、LVGL、Altium、Cadence、KiCad、EasyEDA、SolidWorks）是 assets/svg/vendor-*.svg，增删改 tools/vendor_logos.py -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=c%2Ccpp%2Cpython%2Crust%2Cverilog%2Cmatlab%2Ccmake%2Cbash%2Clatex%2Cmd&theme=dark&perline=10">
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=c%2Ccpp%2Cpython%2Crust%2Cverilog%2Cmatlab%2Ccmake%2Cbash%2Clatex%2Cmd&theme=light&perline=10">
-    <img alt="Languages: C, C++, Python, Rust, Verilog, MATLAB, CMake, Bash, LaTeX, Markdown" src="https://skillicons.dev/icons?i=c,cpp,python,rust,verilog,matlab,cmake,bash,latex,md&theme=light&perline=10">
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=c%2Ccpp%2Cpython%2Crust%2Cverilog%2Cmatlab%2Ccmake%2Cbash%2Cpowershell%2Clatex%2Cmd&theme=dark&perline=11">
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=c%2Ccpp%2Cpython%2Crust%2Cverilog%2Cmatlab%2Ccmake%2Cbash%2Cpowershell%2Clatex%2Cmd&theme=light&perline=11">
+    <img alt="Languages: C, C++, Python, Rust, Verilog, MATLAB, CMake, Bash, PowerShell, LaTeX, Markdown" src="https://skillicons.dev/icons?i=c,cpp,python,rust,verilog,matlab,cmake,bash,powershell,latex,md&theme=light&perline=11">
   </picture>
   <br>
   <picture>
