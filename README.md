@@ -79,7 +79,7 @@ Robotic-systems hardware and embedded engineer. I work from schematic and PCB la
       <br><sub>GaN FETs + LMG1210 driver, 5 board spins</sub>
     </td>
     <td align="center" width="33%" valign="top">
-      <a href="https://www.66ccff-labs.com/work/ad831-active-mixer"><img alt="AD831 active mixer boards" src="assets/boards/ad831.webp" width="240"></a>
+      <a href="https://www.66ccff-labs.com/work/ad831-active-mixer"><img alt="AD831 active mixer board" src="assets/boards/ad831.webp" width="240"></a>
       <br><b>AD831 Active Mixer</b>
       <br><sub>120 MHz RF → 10.7 MHz IF, 4 revisions</sub>
     </td>
