@@ -63,7 +63,7 @@
 <!-- ✏️ 自我介绍 -->
 Robotic-systems hardware and embedded engineer. I work from schematic and PCB layout through MCU firmware, and I write the desktop and web software my hardware needs.
 
-## <kbd>CH1</kbd> Hardware
+## Hardware
 
 <!-- ✏️ 每张卡片：<b> 里是标题，<sub> 里是说明。板子图片在 assets/boards/ -->
 <table>

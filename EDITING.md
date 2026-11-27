@@ -24,7 +24,7 @@
 | 示波器三个通道 | CH1 HARDWARE / CH2 FIRMWARE / CH3 SOFTWARE | `TEXT["channels"]` |
 | 示波器触发 | TRIG CH1 ↑ | `TEXT["trigger"]` |
 | 示波器屏幕底部菜单（第 1 页） | MCU / PCB / CONTROL / SENSOR FUSION / WEB & AI / 1/2 ▸ | `TEXT["menu"]` |
-| 示波器屏幕底部菜单（第 2 页，每 5 秒和第 1 页轮换） | DECODE / UART·RS232 / I2C·SPI / CAN·Modbus / DShot·1-Wire / 2/2 ◂ | `TEXT["decode"]`，一格里用 `
+| 示波器屏幕底部菜单（第 2 页，每 5 秒和第 1 页轮换） | DECODE / UART·RS232 / I2C / CAN·Modbus / SPI·1-Wire / 2/2 ◂ | `TEXT["decode"]`，一格里用 `
 ` 分上下两行 |
 | About | Robotic-systems hardware and embedded engineer. … | `README.md`「About」一节 |
 | CH1 Hardware 卡片 | GaN Quadrotor ESC、AD831 Active Mixer、Claude Chime Power Board、Cirro Cooling Controllers、Course Project Tool Boards、Wireless Voice-Controlled Light | `README.md`「CH1 Hardware」一节，`<b>` 是标题，`<sub>` 是说明 |

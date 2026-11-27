@@ -23,7 +23,7 @@ TEXT = {
     "trigger": "TRIG  CH1 ↑",                       # 屏幕右栏底部
     "menu": ["MCU", "PCB", "CONTROL", "SENSOR FUSION", "WEB & AI", "1/2 ▸"],  # 屏幕底部菜单第 1 页（对应下面一排软键）
     # 屏幕底部菜单第 2 页：协议解码。和第 1 页每 5 秒轮换一次；一格里用 \n 分成上下两行
-    "decode": ["DECODE", "UART\nRS232", "I2C\nSPI", "CAN\nModbus", "DShot\n1-Wire", "2/2 ◂"],
+    "decode": ["DECODE", "UART\nRS232", "I2C", "CAN\nModbus", "SPI\n1-Wire", "2/2 ◂"],
 }
 
 OUT = Path(__file__).resolve().parent.parent / "assets" / "svg"
