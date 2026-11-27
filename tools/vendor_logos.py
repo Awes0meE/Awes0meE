@@ -17,7 +17,7 @@ LOGOS = [
     ("arduino.png", "Arduino", 34, None),
     ("keil-studio.png", "Arm Keil MDK", 30, None),
     ("lvgl-white.svg", "LVGL", 58, "#343839"),
-    ("altium-designer.svg", "Altium Designer", 40, "#E4D9BF"),
+    ("altium-designer.svg", "Altium Designer", 40, None),
     ("cadence-pcb-editor-clean.png", "Cadence Allegro", "full", None),
     ("easyeda.svg", "EasyEDA", 44, None),
     ("solidworks-user-drawn-transparent.png", "SOLIDWORKS", 36, None),
