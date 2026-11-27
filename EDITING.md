@@ -4,7 +4,7 @@
 
 - `README.md`：除示波器和厂商 logo 以外的所有文字。文件里带 ✏️ 的注释标出了每一处可以改的地方。
 - `tools/scope.py`：示波器图上的文字，都在文件顶部的 `TEXT` 里。改完在仓库根目录运行 `python tools/scope.py`，深色和浅色两张图会一起重新生成。
-- `tools/vendor_logos.py`：技术栈第二行「嵌入式与硬件」的 logo（ST、TI、亚德诺、乐鑫、雅特力、Arduino、Keil、LVGL、Altium、Cadence、KiCad、EasyEDA、SolidWorks）。logo 文件放在 `assets/logos/`，改完运行 `python tools/vendor_logos.py`。
+- `tools/tech_stack.py`：技术栈三行的所有图标，以及鼠标悬停在图标上时浮出的说明文字，都在文件顶部的 `ROWS` 里。logo 图片放在 `assets/logos/`。改完运行 `python tools/tech_stack.py`，它会生成图标并自动重写 `README.md` 里的技术栈区块，不用手改 README。
 - `assets/boards/`：硬件区的 6 张实拍抠图，600 × 440 透明底。换图时保持同样尺寸，板子大小看起来才一致。
 
 改完以后，在 GitHub 网页上打开 `README.md`，点铅笔进入编辑，再切到 Preview 标签就能先看效果。
@@ -27,8 +27,10 @@
 | 示波器屏幕底部菜单（第 2 页，每 5 秒和第 1 页轮换） | DECODE / UART·RS232 / I2C / CAN·Modbus / SPI·1-Wire / 2/2 ◂ | `TEXT["decode"]`，一格里用 `\n` 分上下两行 |
 | About | Robotic-systems hardware and embedded engineer. … | `README.md`「About」一节 |
 | 硬件卡片 | GaN Quadrotor ESC、AD831 Active Mixer、Claude Chime Power Board、Cirro Cooling Controllers、Course Project Tool Boards、Wireless Voice-Controlled Light | `README.md`「Hardware」一节，`<b>` 是标题，`<sub>` 是说明；语音灯那张还没有作品集页面，所以没加链接 |
-| 技术栈第一行（语言）和第三行（软件与工具） | C、C++、Python、Rust、Verilog、MATLAB、CMake、Bash、PowerShell、LaTeX、Markdown / TS、JS、HTML、CSS、React、Tauri、Node.js、Vite、SQLite、Qt、Linux、Git | `README.md`「Tech stack」一节注释下面的 `i=`；增删图标后 `perline=` 要改成这一行的图标个数（深色、浅色、兜底三条都改），`alt=` 名单也一起改 |
-| 技术栈第二行（嵌入式与硬件） | ST、TI、亚德诺、乐鑫、雅特力、Arduino、Keil、LVGL、Altium、Cadence、KiCad、EasyEDA、SolidWorks | `tools/vendor_logos.py` 的 `LOGOS`；改完把 `README.md` 第二行 `<img alt=…>` 的名单也改一下 |
+| 技术栈第一行（语言） | C、C++、Python、Rust、Verilog、MATLAB、CMake、Bash、PowerShell、LaTeX、Markdown | `tools/tech_stack.py` 的 `ROWS` |
+| 技术栈第二行（嵌入式与硬件） | ST、TI、亚德诺、乐鑫、雅特力、Arduino、Keil、LVGL、Altium、Cadence、KiCad、EasyEDA、SolidWorks | 同上 |
+| 技术栈第三行（软件与工具） | TS、JS、HTML、CSS、React、Tauri、Node.js、Vite、SQLite、Qt、Linux、Git | 同上 |
+| 技术栈悬停说明 | 每个图标一句英文说明，例如 C — systems programming language | `ROWS` 里每一项的第三个字段；手机上没有悬停，看不到 |
 | 统计卡片标题 | Alvin Li's GitHub Stats | 自动读取你 GitHub 资料里的名字 |
 
 在 `README.md` 里搜 ✏️ 就能找到每一处可以改的地方。
